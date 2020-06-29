@@ -1,0 +1,35 @@
+{
+  "name": "restaurantowner",
+  "version": "1.0.0",
+  "description": "project 0, js, express, eslint, postgresql, postman",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon project0Express.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "nodemon": "^2.0.4",
+    "pg": "^8.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-google": "^0.14.0"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": "2000",
+    "env": {
+      "NODE_ENV": "development",
+      "EXPRESS_PORT": 9008
+    }
+  }
+}
